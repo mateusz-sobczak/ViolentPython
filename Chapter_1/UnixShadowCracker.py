@@ -14,9 +14,9 @@ def testPass(cryptPass):
             except:
                 break
             if (cryptPass == cryptWord):
-                print('[+] Found Password: {}'.format(word))
+                print('\t[+] Found Password: {}'.format(word))
                 return
-        print('[-] Password Not Found')
+        print('\t[-] Password Not Found')
 
 
 def main():
