@@ -12,7 +12,7 @@ def testPass(cryptPass):
             try:
                 cryptWord = crypt.crypt(word, '$' + salt[0] + '$' + salt[1] + '$')
             except:
-                cryptWord = ''
+                break
             if (cryptPass == cryptWord):
                 print('[+] Found Password: {}'.format(word))
                 return
